@@ -18,16 +18,17 @@ const ProductCard: FC<ProductCardInterface> = ({
   price,
   shortDescription,
   id,
+  rating,
   onAddToCart
 }) => {
   return (
-    <Card sx={{ maxWidth: 345, paddingX: "5px" }}>
+    <Card data-testid="product-card" sx={{ maxWidth: 345, paddingX: "5px" }}>
       <CardActionArea onClick={() => onAddToCart(id)}>
         <CardMedia
           component="img"
           height="200px"
           image={imgUrl}
-          alt="green iguana"
+          alt={productName}
         />
         <CardContent sx={{ textAlign: "center" }}>
           <Typography
@@ -42,7 +43,7 @@ const ProductCard: FC<ProductCardInterface> = ({
             {price}
           </Typography>
           <Box justifyContent={"center"} display={"flex"}>
-            <Rating labels={labels} />
+            <Rating ratings={rating} labels={labels} />
           </Box>
           <Typography variant="body2" color="text.secondary">
             {shortDescription.substring(0, 50) + "..."}
