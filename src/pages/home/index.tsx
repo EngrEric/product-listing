@@ -36,12 +36,32 @@ const Home = () => {
     );
 
   return (
-    <Box p={"100px"}>
-      <Typography textAlign={"center"} variant="h3" component={"h1"}>
-        Demo List of Products
+    <>
+      <Box
+        sx={{
+          height: "40vh",
+          backgroundColor: "honeydew",
+          position: "fixed",
+          width: "100vw",
+          zIndex: -1
+        }}
+      />
+      <Typography
+        bgcolor={"#000"}
+        position={"fixed"}
+        color={"#fff"}
+        width={"100%"}
+        textAlign={"center"}
+        variant="h5"
+        zIndex={1}
+        component={"h1"}
+      >
+        FREE DELIVERY ON ALL ORDERS OVER €35
       </Typography>
-      {data ? <ProductList products={data?.products} /> : <></>}
-    </Box>
+      <Box p={"100px"}>
+        {data ? <ProductList products={data?.products} /> : <></>}
+      </Box>
+    </>
   );
 };
 
