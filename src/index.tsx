@@ -9,7 +9,7 @@ import theme from "./theme";
 import CssBaseline from "@mui/material/CssBaseline";
 
 const client = new ApolloClient({
-  uri: "http://localhost:3000/graphql",
+  uri: "http://localhost:4000/graphql",
   cache: new InMemoryCache()
 });
 
