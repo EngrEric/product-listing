@@ -1,4 +1,4 @@
-import { GetLabeltextInterface, labels as starLabels } from "../contants";
+import { GetLabeltextInterface, labels as starLabels } from "./contants";
 
 /**
  * A function that returns a custom label for rating component

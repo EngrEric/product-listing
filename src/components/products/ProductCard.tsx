@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Rating } from "../common";
 import { AddShoppingCart } from "@mui/icons-material";
-import { labels } from "../../contants";
+import { labels } from "../../utils /contants";
 import { FC, memo } from "react";
 import { ProductCardInterface } from "./constants";
 

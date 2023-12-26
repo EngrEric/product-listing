@@ -1,7 +1,7 @@
 import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 import { FC } from "react";
 import { Rating, ToggleButton } from "../common";
-import { labels } from "../../contants";
+import { labels } from "../../utils /contants";
 import { ProductInterface } from "./constants";
 import { ArrowBack } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";

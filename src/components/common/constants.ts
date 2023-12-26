@@ -1,4 +1,4 @@
-import { GetLabeltextInterface, LabelType } from "../../contants";
+import { GetLabeltextInterface, LabelType } from "../../utils /contants";
 
 export interface RatingProps {
   ratings?: number;
