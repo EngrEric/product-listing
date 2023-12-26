@@ -13,7 +13,7 @@ const ProductDetails: FC<{ product: ProductInterface }> = ({ product }) => {
   const handleTypesSelection = (value: string) => {};
 
   return (
-    <Box>
+    <Box data-testid="product-details">
       <Button
         sx={{
           position: "absolute",
@@ -35,7 +35,7 @@ const ProductDetails: FC<{ product: ProductInterface }> = ({ product }) => {
               justifyContent: "center"
             }}
           >
-            <img width={"100%"} src={product.imgUrl} alt="shop img" />
+            <img width={"100%"} src={product.imgUrl} alt={product.name} />
           </Box>
         </Grid>
         <Grid item md={6} xs={12}>

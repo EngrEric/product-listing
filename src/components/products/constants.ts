@@ -4,6 +4,7 @@ export interface ProductCardInterface {
   price: string;
   shortDescription: string;
   id: string;
+  rating: number;
   onAddToCart: (value: string) => void;
 }
 
@@ -18,4 +19,12 @@ export interface ProductInterface {
   id: number | string;
   options: string;
   sizes: string;
+}
+
+export interface GetAllProductsData {
+  products: ProductInterface[];
+}
+
+export interface GetOneProductsData {
+  product: ProductInterface;
 }

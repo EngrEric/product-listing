@@ -7,12 +7,10 @@ import "./index.css";
 import { router } from "./routes";
 import theme from "./theme";
 import CssBaseline from "@mui/material/CssBaseline";
-import { productTypeDefs } from "./services/graphql/constants";
 
 const client = new ApolloClient({
   uri: "http://localhost:3000/graphql",
-  cache: new InMemoryCache(),
-  typeDefs: productTypeDefs
+  cache: new InMemoryCache()
 });
 
 const root = ReactDOM.createRoot(

@@ -20,6 +20,7 @@ const RatingComp: FC<RatingProps> = ({
 
   return (
     <Box
+      data-testid="rating-component"
       sx={{
         width: "200px",
         display: "flex",

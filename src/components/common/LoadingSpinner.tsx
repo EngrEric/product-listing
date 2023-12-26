@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 
 const LoadingSpinner: FC = () => {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box data-testid="loading-spinner" sx={{ display: "flex" }}>
       <CircularProgress />
     </Box>
   );
