@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
  */
 const AppLayout: FC = () => {
   return (
-    <div>
+    <div data-testid="app-layout">
       <Outlet />
     </div>
   );
