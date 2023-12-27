@@ -102,4 +102,4 @@ In the project directory, follow these steps to get started:
 
 You can see the app demo video here [Demo Video](https://vimeo.com/897948817/59a8128e0e).
 
-To see the backend repo click [Backend Repo Link](https://reactjs.org/).
+To see the backend repo click [Backend Repo Link](https://github.com/EngrEric/backend-product-listing).
