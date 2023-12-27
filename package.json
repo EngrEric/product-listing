@@ -4,8 +4,6 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.8.8",
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.1",
     "@mui/material": "^5.15.1",
     "@testing-library/jest-dom": "^5.14.1",
