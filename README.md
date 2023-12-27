@@ -1,46 +1,104 @@
-# Getting Started with Create React App
+# Product Listing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React application that allows users to view list of products and the details. It includes features like displaying a list of products, showing detailed information about a specific product on selection. The project utilizes TypeScript, Material-UI for UI Components and styling, Apollo Client for GraphQL integration, and Jest with React Testing Library for unit testing.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+This structure represents a simple scalable application with a clear separation of concerns. The components directory contains reusable UI components, the pages directory contains page-level components, the routes directory manages the application’s routes, and the services directory handles data fetching and other side effects. The utils directory contains utility functions and constants.
 
-### `yarn start`
+```
+product-listing-frontned
+├── node_modules
+├── public
+└── src
+    ├── components
+    │   ├── common
+    │   │   ├── AppLayout.test.tsx
+    │   │   ├── AppLayout.tsx
+    │   │   ├── constants.ts
+    │   │   ├── index.tsx
+    │   │   ├── LoadingSpinner.tsx
+    │   │   ├── Rating.test.tsx
+    │   │   ├── Rating.tsx
+    │   │   ├── ToggleButton.test.tsx
+    │   │   └── ToggleButton.tsx
+    │   └── products
+    │       ├── constants.ts
+    │       ├── index.tsx
+    │       ├── ProductCard.test.tsx
+    │       ├── ProductCard.tsx
+    │       ├── ProductDetails.test.tsx
+    │       ├── ProductDetails.tsx
+    │       ├── ProductList.test.tsx
+    │       └── ProductList.tsx
+    ├── pages
+    │   ├── home
+    │   │   ├── _snapshots_
+    │   │   ├── index.test.tsx
+    │   │   └── index.tsx
+    │   └── product
+    │       ├── _snapshots_
+    │       ├── index.test.tsx
+    │       └── index.tsx
+    ├── routes
+    │   ├── index.test.tsx
+    │   └── index.tsx
+    ├── services
+    │   ├── graphql
+    │   │   ├── constants.ts
+    │   │   └── product.ts
+    │   └── rest-api
+    ├── utils
+    │   ├── helpers.test.ts
+    │   ├── helpers.ts
+    │   ├── constants.ts
+    │   ├── index.css
+    │   ├── index.test.ts
+    │   └── index.ts
+    └── (other files)
+└── (other files)
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In the project directory, follow these steps to get started:
 
-### `yarn test`
+1. #### Run app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone this repo
+- Intall node version 18 or higher
+- Install dependencies with: `yarn install`
+- Run the app with: `yarn start`
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `yarn build`
+2. #### Run test
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Run test with: `yarn test`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. #### Run build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Run build with: `yarn build`
 
-### `yarn eject`
+## Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- React 18
+- React router v6
+- Typescript
+- GraphQL
+- Apollo Client
+- Jest
+- React Testing Library
+- Functional Components
+- Material UI and Material Icons
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- List products
+- Product details based on the id selected
+- GraphQL Integration using Apollo Client
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Learn More
 
-## Learn More
+You can see the app demo video here [Demo Video](https://vimeo.com/897948817/59a8128e0e).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To see the backend repo click [Backend Repo Link](https://reactjs.org/).
