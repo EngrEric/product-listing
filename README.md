@@ -70,6 +70,7 @@ In the project directory, follow these steps to get started:
 - Install dependencies with: `yarn install`
 - Run the app with: `yarn start`
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Make sure the backend is running
 
 2. #### Run test
 
