@@ -1,8 +1,9 @@
 import { Grid } from "@mui/material";
-import { ProductCard } from "./";
 import { useNavigate } from "react-router-dom";
-import { ProductInterface } from "./constants";
 import { FC } from "react";
+
+import { ProductCard } from "./";
+import { ProductInterface } from "./constants";
 
 /**
  * @description The component that list all the products
@@ -18,7 +19,7 @@ const ProductList: FC<{ products: Array<ProductInterface> }> = ({
       container
       spacing={{ md: 4, xs: 3 }}
       columns={{ md: 12, xs: 12, sm: 6 }}
-      sx={{ padding: "20px 20px", width: "100%" }}
+      sx={{ padding: "20px", width: "100%" }}
     >
       {products.map((product, index) => {
         return (

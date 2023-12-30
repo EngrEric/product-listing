@@ -1,12 +1,13 @@
+import { FC, memo } from "react";
 import { Box, Card, CardActionArea, CardMedia } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Rating } from "../common";
 import { AddShoppingCart } from "@mui/icons-material";
+
+import { Rating } from "../common";
 import { labels } from "../../utils /contants";
-import { FC, memo } from "react";
 import { ProductCardInterface } from "./constants";
 
 /**

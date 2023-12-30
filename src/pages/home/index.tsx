@@ -1,7 +1,7 @@
-import React from "react";
-import { ProductList } from "../../components/products";
 import { Box, Stack, Typography } from "@mui/material";
 import { useQuery } from "@apollo/client";
+
+import { ProductList } from "../../components/products";
 import { GetAllProductsData } from "../../components/products/constants";
 import { productsQuery } from "../../services/graphql/product";
 import { LoadingSpinner } from "../../components/common";
