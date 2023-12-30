@@ -1,10 +1,11 @@
-import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 import { FC } from "react";
-import { Rating, ToggleButton } from "../common";
-import { labels } from "../../utils /contants";
-import { ProductInterface } from "./constants";
+import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 import { ArrowBack } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+
+import { ProductInterface } from "./constants";
+import { Rating, ToggleButton } from "../common";
+import { labels } from "../../utils /contants";
 
 const ProductDetails: FC<{ product: ProductInterface }> = ({ product }) => {
   const navigate = useNavigate();

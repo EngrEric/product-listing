@@ -14,7 +14,7 @@ exports[`ProductDetailsPage renders product details when data is loaded 1`] = `
     class="MuiBox-root css-153r35s"
   >
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-spacing-md-4 css-ffkbsb-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-spacing-md-4 css-1jzeqi-MuiGrid-root"
       data-testid="product-list"
     >
       <div

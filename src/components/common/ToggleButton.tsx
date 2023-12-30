@@ -1,9 +1,10 @@
-import { FC, useState, MouseEvent } from "react";
+import { FC, useState, MouseEvent, memo } from "react";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { Typography } from "@mui/material";
-import { CustomToggleButtonInterface } from "./constants";
 import { styled } from "@mui/material/styles";
+
+import { CustomToggleButtonInterface } from "./constants";
 
 const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
   "& .MuiToggleButtonGroup-grouped": {
@@ -31,12 +32,9 @@ const CustomToggleButton: FC<CustomToggleButtonInterface> = ({
 }) => {
   const [value, setValue] = useState(options[0].value);
 
-  const handleAChange = (
-    event: MouseEvent<HTMLElement>,
-    newAlignment: string
-  ) => {
-    setValue(newAlignment);
-    onClick(newAlignment);
+  const handleAChange = (event: MouseEvent<HTMLElement>, option: string) => {
+    setValue(option);
+    onClick(option);
   };
 
   return (
@@ -66,4 +64,4 @@ const CustomToggleButton: FC<CustomToggleButtonInterface> = ({
   );
 };
 
-export default CustomToggleButton;
+export default memo(CustomToggleButton);
